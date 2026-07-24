@@ -4,7 +4,7 @@ import federation from "@originjs/vite-plugin-federation";
 export default defineConfig({
     plugins: [
         federation({
-            name: 'cart-app',
+            name: 'cart_app',
             filename: 'remoteEntry.js',
             exposes: {
                 './Cart': './src/main.ts',
