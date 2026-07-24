@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 
 export const mountProducts = (el: HTMLElement | string) => {
@@ -11,9 +10,7 @@ export const mountProducts = (el: HTMLElement | string) => {
     }
 }
 
-if (import.meta.env.DEV) {
-    const devRoot = document.querySelector<HTMLDivElement>('#app')
-    if (devRoot) {
-        mountProducts(devRoot);
-    }
+const devRoot = document.querySelector<HTMLDivElement>('#app')
+if (devRoot) {
+    mountProducts(devRoot);
 }

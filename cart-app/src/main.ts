@@ -1,4 +1,3 @@
-import './style.css'
 
 let cartCount = 0;
 
